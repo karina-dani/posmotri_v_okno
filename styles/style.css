@@ -9,6 +9,9 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -42,8 +45,7 @@ ol {
   justify-content: space-between;
   align-items: flex-end;
   gap: 30px;
-  margin: 0 auto;
-  padding: 133px 0;
+  margin: auto;
   max-inline-size: 1140px;
 }
 
@@ -161,14 +163,9 @@ ol {
   cursor: pointer;
 }
 
-.search-form__label:has(input[type="checkbox"]):hover::before {
-  content: "";
-  position: absolute;
-  background-color: #fff;
-  inset-block-end: 0;
-  inset-inline-start: 24px;
-  inline-size: 38px;
-  block-size: 1px;
+.search-form__label:has(.search-form__checkbox):hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .button {
@@ -183,6 +180,11 @@ ol {
   text-align: center;
   background-color: transparent;
   cursor: pointer;
+}
+
+.button:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .button:active {
@@ -204,24 +206,12 @@ ol {
   padding-inline-end: 73.55px;
 }
 
-.search-form__submit-button:hover::after {
-  content: "";
-  position: absolute;
-  margin: auto;
-  background-color: #fff;
-  inset-block-end: 6px;
-  inset-inline-start: 0;
-  inset-inline-end: 0;
-  inline-size: 47px;
-  block-size: 1px;
-}
-
 .content__details {
   display: flex;
   flex-direction: column;
   gap: 25px;
   inline-size: 399px;
-  block-size: 100%;
+  block-size: 534px;
 }
 
 .title {
@@ -309,18 +299,6 @@ ol {
 
 .more-button {
   inline-size: 100%;
-}
-
-.more-button:hover::after {
-  content: "";
-  position: absolute;
-  margin: auto;
-  background-color: #fff;
-  inset-block-end: 6px;
-  inset-inline-start: 0;
-  inset-inline-end: 0;
-  inline-size: 106px;
-  block-size: 1px;
 }
 
 .visually-hidden {
