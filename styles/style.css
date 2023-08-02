@@ -61,8 +61,6 @@ ol {
 }
 
 .result__video {
-  position: absolute;
-  inset: 0;
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
