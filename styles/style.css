@@ -210,8 +210,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  inline-size: 399px;
-  block-size: 534px;
+  min-block-size: 534px;
 }
 
 .title {
@@ -230,7 +229,7 @@ ol {
   position: relative;
   overflow: auto;
   max-block-size: 298px;
-  min-inline-size: 416px;
+  min-inline-size: 399px;
 }
 
 .content__list-item:not(:last-child) {
